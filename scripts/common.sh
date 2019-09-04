@@ -8,6 +8,21 @@ HADOOP_ARCHIVE=$HADOOP_VERSION.tar.gz
 HADOOP_MIRROR_DOWNLOAD=http://archive.apache.org/dist/hadoop/core/$HADOOP_VERSION/$HADOOP_ARCHIVE
 HADOOP_RES_DIR=/vagrant/resources/hadoop
 
+# Yarn
+HADOOP_YARN_HOME=$HADOOP_PREFIX
+
+# hive
+HIVE_VERSION=hive-1.2.1
+HIVE_ARCHIVE=apache-$HIVE_VERSION-bin.tar.gz
+HIVE_MIRROR_DOWNLOAD=http://archive.apache.org/dist/hive/$HIVE_VERSION/$HIVE_ARCHIVE
+HIVE_RES_DIR=/vagrant/resources/hive
+HIVE_PREFIX=/usr/local/hive
+HIVE_CONF=/usr/local/hive/conf
+HIVE_EXEC_JAR=${HIVE_PREFIX}/lib/hive-exec-${HIVE_VERSION}.jar
+
+function passwordlessSSH {
+	cp -pRv /vagrant/resources/common/{id_rsa,id_rsa.pub,authorized_keys} /root/.ssh/ 
+}
 
 function resourceExists {
 	FILE=/vagrant/resources/$1
