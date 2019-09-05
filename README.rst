@@ -10,6 +10,7 @@ Vagrant project for installing Hadoop on single VM.
 
 * Hadoop 2.7.2
 * Hive 1.2.1
+* Pig 0.17.0
 
 Installation
 ============
@@ -63,6 +64,20 @@ To access the hive CLI
 .. code-block::
 
   /usr/local/hive/bin/hive
+
+Pig
+---
+To setup Pig, run the following as `root`
+
+.. code-block::
+
+  /vagrant/scripts/setup_pig.sh ⏎
+
+To access the Pig CLI
+
+.. code-block::
+
+  /usr/local/pig/bin/pig ⏎
 
 Web Interfaces
 ==============

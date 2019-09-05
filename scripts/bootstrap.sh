@@ -28,6 +28,7 @@ EOL
 function setupUtilities {
     yum install -y sshpass
     yum install -y mlocate
+    yum install -y wget 
     updatedb
 }
 
