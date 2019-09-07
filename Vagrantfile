@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
     
     master.vm.provider "virtualbox" do |v|
       v.name = "hadoop-aio"
-      v.customize ["modifyvm", :id, "--memory", "4096"]
+      v.customize ["modifyvm", :id, "--memory", "5096"]
     end
 
   end
