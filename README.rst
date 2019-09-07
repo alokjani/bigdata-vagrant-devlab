@@ -11,6 +11,8 @@ Vagrant project for installing Hadoop on single VM.
 * Hadoop 2.7.2
 * Hive 1.2.1
 * Pig 0.17.0
+* Flume 1.7.0
+* Sqoop 1.4.6 
 
 Installation
 ============
@@ -78,6 +80,23 @@ To access the Pig CLI
 .. code-block::
 
   /usr/local/pig/bin/pig ⏎
+
+Flume
+-----
+To setup Flume, run the following as `root`
+
+.. code-block::
+
+    /vagrant/scripts/setup_flume.sh
+
+Sqoop
+-----
+To setup Sqoop, run the following as `root`
+
+.. code-block::
+
+    /vagrant/scripts/setup_sqoop.sh   
+    /vagrant/scripts/setup_mysql.sh    
 
 Web Interfaces
 ==============
