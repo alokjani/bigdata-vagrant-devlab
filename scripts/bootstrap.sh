@@ -9,8 +9,10 @@ function disableFirewall {
 
 function installJava {
 	echo "install open jdk"
-	yum install -y java-1.7.0-openjdk.x86_64
-	yum install -y java-1.7.0-openjdk-devel.x86_64      # for `jps`
+	yum install -y java-1.8.0-openjdk
+	yum install -y java-1.8.0-openjdk-devel     # for `jps`
+
+    ln -s /usr/lib/jvm/java-1.8.0 /usr/local/java   # Zeppelin uses /usr/local/java/bin/java
 }
 
 function setupJava {

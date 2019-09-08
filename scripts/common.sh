@@ -1,14 +1,12 @@
 #!/usr/bin/env bash
 
-# -- hadoop
+# -- Hadoop Core = HDFS + YARN
 HADOOP_PREFIX=/usr/local/hadoop
 HADOOP_CONF=$HADOOP_PREFIX/etc/hadoop
 HADOOP_VERSION=hadoop-2.7.2
 HADOOP_ARCHIVE=$HADOOP_VERSION.tar.gz
 HADOOP_MIRROR_DOWNLOAD=http://archive.apache.org/dist/hadoop/core/$HADOOP_VERSION/$HADOOP_ARCHIVE
 HADOOP_RES_DIR=/vagrant/resources/hadoop
-
-# -- YARN
 HADOOP_YARN_HOME=$HADOOP_PREFIX
 
 # -- Hive
@@ -47,6 +45,14 @@ JAVA_HOME="/usr/lib/jvm/java-1.7.0"
 JAVA_MYSQL_CONNECTOR_VERSION=5.1.40
 JAVA_MYSQL_CONNECTOR_JAR=mysql-connector-java-${JAVA_MYSQL_CONNECTOR_VERSION}.jar
 JAVA_MYSQL_CONNECTOR_DOWNLOAD=http://central.maven.org/maven2/mysql/mysql-connector-java/${JAVA_MYSQL_CONNECTOR_VERSION}/mysql-connector-java-${JAVA_MYSQL_CONNECTOR_VERSION}.jar
+
+# -- Zeppelin
+ZEPPELIN_VERSION=0.8.0
+ZEPPELIN_RELEASE=zeppelin-${ZEPPELIN_VERSION}-bin-netinst
+ZEPPELIN_ARCHIVE=${ZEPPELIN_RELEASE}.tgz
+ZEPPELIN_MIRROR_DOWNLOAD=http://www-eu.apache.org/dist/zeppelin/zeppelin-${ZEPPELIN_VERSION}/${ZEPPELIN_ARCHIVE}
+ZEPPELIN_RES_DIR=/vagrant/resources/zeppelin
+ZEPPELIN_TARGET=/root
 
 function passwordlessSSH {
 	cp -pRv /vagrant/resources/common/{id_rsa,id_rsa.pub,authorized_keys} /root/.ssh/ 
