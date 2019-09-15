@@ -1,6 +1,6 @@
-==============
-Vagrant Hadoop
-==============
+=========================
+Vagrant Hadoop Sandbox VM
+=========================
 .. contents:: Table of Contents
 .. section-numbering::
 
@@ -137,6 +137,18 @@ Web Interfaces
 * YARN JobHistoryServer http://192.168.33.10:19888/jobhistory/
 * Zeppelin http://192.168.33.10:8080/
 
+TODO
+====
+
+* Solr & Lucene
+* Mahout
+* Storm
+* HBase
+* Spark
+* Drill
+* Tez
+* Oozie
+
 References
 ==========
 
@@ -146,3 +158,4 @@ This lab based on the following excellent works:
 * Alex Holmes https://github.com/alexholmes/vagrant-hadoop-spark-hive
 * Hive details at https://www.tutorialspoint.com/hive/hive_installation.htm
 * Zeppelin MySQL Connector http://bigdatums.net/2017/03/02/connecting-apache-zeppelin-to-mysql/
+* https://www.edureka.co/blog/hadoop-ecosystem
