@@ -5,7 +5,7 @@ Big Data Development Lab
 .. section-numbering::
 
 Introduction
-============
+------------
 
 This repository will setup a local development environment for Big Data.
 
@@ -19,7 +19,7 @@ It will create an All-in-One Vagrant VM for running Hadoop Ecosystem components.
 * Zeppelin 0.8.0
 
 Installation
-============
+------------
 
 The setup has been tested with Vagrant & Cent7
 
