@@ -1,12 +1,15 @@
-=========================
-Vagrant Hadoop Sandbox VM
-=========================
+Big Data Development Lab
+========================
+
 .. contents:: Table of Contents
 .. section-numbering::
 
 Introduction
 ============
-All-in-One Vagrant project for running Hadoop Ecosystem inside a single VM. 
+
+This repository will setup a local development environment for Big Data.
+
+It will create an All-in-One Vagrant VM for running Hadoop Ecosystem components. 
 
 * Hadoop 2.7.2
 * Hive 1.2.1
