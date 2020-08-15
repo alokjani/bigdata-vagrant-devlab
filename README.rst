@@ -1,15 +1,12 @@
 Big Data Development Lab
 ========================
 
-.. contents:: Table of Contents
-.. section-numbering::
-
 Introduction
 ------------
 
-This repository will setup a local development environment for Big Data.
+If you are looking to setup Hadoop for local development, you are in the right place :) 
 
-It will create an All-in-One Vagrant VM for running Hadoop Ecosystem components. 
+This repository will help you create AIO Hadoop VM on you local machine with entire Hadoop Ecosystem. 
 
 * Hadoop 2.7.2
 * Hive 1.2.1
